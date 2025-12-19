@@ -288,6 +288,7 @@ STARKs are SNARKs without Trusted Setup.
 Get started:
 
 - [STARK @ Home {video playlist}](https://www.youtube.com/playlist?list=PLcIyXLwiPilUFGw7r2uyWerOkbx4GFMXq)
+- [STARK Lab: An interactive end-to-end tutorial](https://floatingpragma.io/starklab/)
 
 ### FRI-STARKs
 
