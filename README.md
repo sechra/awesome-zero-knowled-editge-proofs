@@ -13,10 +13,11 @@
   - [Applications](#applications)
     - [Ethereum](#ethereum)
     - [Other blockchains](#other-blockchains)
+    - [Non-blockchain](#non-blockchain)
   - [Comparison of the most popular zkp systems](#comparison-of-the-most-popular-zkp-systems)
   - [Bulletproofs](#bulletproofs)
     - [Try](#try)
-    - [Proof system implementations:](#proof-system-implementations)
+    - [Proof system implementations](#proof-system-implementations)
     - [Halo](#halo)
   - [SNARKs](#snarks)
     - [Learn](#learn)
@@ -38,6 +39,7 @@
 
 [Zero-Knowledge Proofs Starter Pack](https://ethresear.ch/t/zero-knowledge-proofs-starter-pack/4519): alternative introductory list for beginners (more videos).
 
+- [Cyfrin Updraft: Fundamentals of Zero-Knowledge Proofs](https://cyfrin.com/updraft/fundamentals-of-zero-knowledge-proofs/)
 - [Zero Knowledge Proofs: An illustrated primer by Matthew Green](https://blog.cryptographyengineering.com/2014/11/27/zero-knowledge-proofs-illustrated-primer/)
 - [Demystifying zero-knowledge proofs](https://docs.google.com/presentation/d/1gfB6WZMvM9mmDKofFibIgsyYShdf0RV_Y8TLz3k1Ls0/edit#slide=id.p) ([video](https://www.youtube.com/watch?v=_6TqUNVLChc)) (math-heavy, awesome introduction into underlying cryptography)
 - [Introduction to SNARKs/STARKs by Eli Ben-Sasson](https://www.youtube.com/watch?v=VUN35BC11Qw) (YouTube)
@@ -48,8 +50,8 @@
 [ZK whiteboard sessions by ZK Hack](https://zkhack.dev/whiteboard/):
 
 - [Part 1: What is a SNARK?](https://zkhack.dev/whiteboard/module-one/)
-- [Part 2: Building a SNARK (Part I):](https://zkhack.dev/whiteboard/module-one/)
-- [Part 3: Building a SNARK (Part II)](https://zkhack.dev/whiteboard/module-three/)
+- [Part 2: Building a SNARK (Part 1):](https://zkhack.dev/whiteboard/module-two/)
+- [Part 3: Building a SNARK (Part 2)](https://zkhack.dev/whiteboard/module-three/)
 - [Part 4: SNARKS vs. STARKS](https://zkhack.dev/whiteboard/module-four/)
 - [Part 5: PLONK and Custom Gates with Adrian Hamelink](https://zkhack.dev/whiteboard/module-five/)
 - [Part 6: Lookup Arguments for Performance Optimisation](https://zkhack.dev/whiteboard/module-six/)
@@ -77,6 +79,7 @@ More complete curated list of implementations and scientific resources:
 - [The 9th BIU Winter School on Cryptography: Zero Knowledge](https://cyber.biu.ac.il/event/the-9th-biu-winter-school-on-cryptography/)
 - [UIUC: ECE498AC/CS498AM: Applied Cryptography, Fall 2019](http://soc1024.ece.illinois.edu/teaching/ece498ac/fall2019/)
 - [Zero Knowledge Proof, MOOC Spring 2023](https://zk-learning.org/)
+- [[MIT IAP 2023] Modern Zero Knowledge Cryptography](https://zkiap.com/)
 
 ## Use cases
 
@@ -89,7 +92,6 @@ More complete curated list of implementations and scientific resources:
 - [ZK Sync](https://medium.com/matter-labs/introducing-zk-sync-the-missing-link-to-mass-adoption-of-ethereum-14c9cea83f58) by [Matter Labs](https://matter-labs.io)
   - [ZK SDK](https://zksync.io)
   - [ZK Sync code](https://github.com/matter-labs/zksync)
-  - [ZK Sync live demo](https://demo.matter-labs.io)
 - [SNARK-based permissioned database: rollup by BarryWhitehat](https://github.com/barryWhiteHat/roll_up)
 - [Gnosis dFusion: DEX on SNARKs](https://github.com/gnosis/dex-research/tree/master/dFusion)
 - [Loopring DEX Protocol (v3)](https://github.com/Loopring/protocols/blob/master/packages/loopring_v3/DESIGN.md)
@@ -99,17 +101,32 @@ More complete curated list of implementations and scientific resources:
 ### Other blockchains
 
 - [Zcash: Privacy-Protecting Digital Currency](https://z.cash) (SNARKs)
-  - [Community Chat](https://discordapp.com/invite/PhJY6Pm)
+  - [Community Chat](https://discord.com/invite/zcash)
   - [Forums](https://forum.zcashcommunity.com)
 - [Monero: Private Digital Currency](https://www.getmonero.org) (Bulletproofs)
 - [Mina Protocol: A Constant-Size Blockchain](https://minaprotocol.com/) (recursive SNARKs)
   - [YouTube introduction](https://www.youtube.com/watch?v=qCVACpgQSjo)
 - [Grin: Simple, privacy-focused, scalable MimbleWimble chain implementation](https://grin.mw/) (Bulletproofs)
 - [Beam: Private and Scalable Coin based on MimbleWimble](https://www.beam.mw)
+- [Namada: Asset Agnostic, Multichain privacy](https://namada.net/) (SNARKs)
+  - [Youtube Introduction](https://youtu.be/F2cPd7nwG7A?si=iHw93A3ziLc9neH5)
+  - [Specs Documentation](https://specs.namada.net/masp)
+- [IronFish: Privacy-Preserving Regulatory-Friendly Cryptocurrency Platform](https://ironfish.network/use/get-started/get-started) (Groth16 zk-SNARKs)
+  - [Whitepaper](https://ironfish.network/learn/whitepaper)
+  - [Community Chat](https://discord.ironfish.network/)
+  - [YouTube Channel](https://www.youtube.com/@ironfishnetwork)
+- [succinct: Write ZKPs with Rust using SP1, a performant, open-source zkVM and generate proofs in 1-click on Succinct’s decentralized prover network](https://succinct.xyz/)
+  - [document](https://succinctlabs.github.io/sp1/)
+- [Valida： Valida is a STARK-based virtual machine，The VM has a RISC-inspired instruction set，The VM is designed to be customizable. It can easily be extended to include an arbitrary number of user-defined instructions](https://github.com/valida-xyz/valida)
+- [Nexus zkVM:  Nexus is a modular, extensible, open-source, highly-parallelized, prover-optimized, contributor-friendly, zkVM written in Rust, focused on performance and security.](https://nexus.xyz/)
 
 ### Non-blockchain
 
 - Zero-Knowledge Machine Learning - [awesome-zkml](https://github.com/worldcoin/awesome-zkml)
+- [zk-email](https://github.com/zkemail)
+- [Proof of Passport](https://github.com/zk-passport/proof-of-passport)
+- [Semaphore](https://github.com/semaphore-protocol/semaphore)
+- [Web-Proofs](https://zeroknowledge.fm/325-2/)
 
 ## Comparison of the most popular zkp systems
 
@@ -135,6 +152,7 @@ More complete curated list of implementations and scientific resources:
 
 - [Implementation in Haskell](https://github.com/adjoint-io/bulletproofs)
 - [Implementation in Rust](https://github.com/dalek-cryptography/bulletproofs)
+- [Implementation in C](https://github.com/Tongsuo-Project/Tongsuo)
 
 ### Proof system implementations
 
@@ -156,6 +174,7 @@ Get started:
 - [What are zk-SNARKs (Zcash blog)](https://z.cash/technology/zksnarks)
 - [BabySNARK- The simplest possible SNARK for NP. You know, for kids!](https://github.com/initc3/babySNARK)
 - [The MoonMath Manual to zk-SNARKs (A free learning resource for beginners to experts)](https://leastauthority.com/community-matters/moonmath-manual/)
+- [Ronkathon: Learn Cryptography from First Principles](https://pluto.xyz/blog/ronkathon-learn-cryptography-from-first-principles)
 
 Why and How zk-SNARK Works:
 
@@ -197,6 +216,11 @@ Protocol descriptions:
 - [Groth16 protocol](https://eprint.iacr.org/2016/260.pdf) (original paper)
 - [Zcash Sapling protocol spec](https://github.com/zcash/zips/blob/master/protocol/protocol.pdf) (very useful as detailed cheat-sheet of all cryptography used)
 
+OxPARC learning group:
+
+- [Circom](https://learn.0xparc.org/circom)
+- [Halo2](https://learn.0xparc.org/halo2)
+
 ### Try
 
 - [libsnark (C++)](https://github.com/scipr-lab/libsnark)
@@ -210,10 +234,11 @@ Protocol descriptions:
   - [Zero Knowledge Proof Application Demo, with libsnarks, truffle and docker](https://medium.com/hackernoon/zero-knowledge-proof-application-demo-2a457cfc73c1)
 - [ethsnarks by HarryR (alternative toolkit for viable zk-SNARKS on Ethereum, Web, Mobile and Desktop)](https://github.com/HarryR/ethsnarks)
 - [gnark - library for zero-knowledge proof protocols written in Go](https://github.com/ConsenSys/gnark)
-- [circom and snarkjs tutorial](https://github.com/iden3/circom/blob/master/TUTORIAL.md)
+- [circom and snarkjs tutorial](https://github.com/iden3/circom_old/blob/master/TUTORIAL.md)
   - [Roll-up tutorial using Circom and SnarkJS by Ying Tong](https://github.com/therealyingtong/roll_up_circom_tutorial)
   - [A circuit and zk-snark implement using Circom and SnarkJS by Luozhu](https://github.com/LuozhuZhang/zkps-circuit-snark)
 - [SnarkyJS - a TypeScript framework for writing zk-SNARKs in the browser and developing Snapps for Mina Protocol by O(1) labs - WIP](https://github.com/o1-labs/snarkyjs)
+- [Ronkathon: Applied Cryptography from first principles](https://github.com/pluto/ronkathon)
 
 ### Scaling the prover
 
@@ -244,8 +269,10 @@ SNORKs are SNARKs with universal and updateable trusted setup.
 (This is a recent development. Contributions are welcome!)
 
 - [Awesome PLONK](https://github.com/Fluidex/awesome-plonk): A curated list of awesome things related to plonk proof system.
-- [Understanding PLONK by Vitalik Buterin](https://vitalik.ca/general/2019/09/22/plonk.html)
+- [Understanding PLONK by Vitalik Buterin](https://vitalik.eth.limo/general/2019/09/22/plonk.html)
 - [Ignition: Trusted Setup MPC Ceremony for PLONK](https://medium.com/aztec-protocol/aztec-announcing-our-ignition-ceremony-757850264cfe)
+- [Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge](https://eprint.iacr.org/2019/953.pdf)
+
 
 ### Marlin
 
@@ -265,6 +292,7 @@ STARKs are SNARKs without Trusted Setup.
 Get started:
 
 - [STARK @ Home {video playlist}](https://www.youtube.com/playlist?list=PLcIyXLwiPilUFGw7r2uyWerOkbx4GFMXq)
+- [STARK Lab: An interactive end-to-end tutorial](https://floatingpragma.io/starklab/)
 
 ### FRI-STARKs
 
@@ -276,9 +304,9 @@ Introduction:
 
 Vitalik Buterin's blog series on STARKs:
 
-- [Part I: Proofs with Polynomials](https://vitalik.ca/general/2017/11/09/starks_part_1.html)
-- [Part II: Thank Goodness It's FRI-day](https://vitalik.ca/general/2017/11/22/starks_part_2.html)
-- [Part III: Into the Weeds](https://vitalik.ca/general/2018/07/21/starks_part_3.html)
+- [Part I: Proofs with Polynomials](https://vitalik.eth.limo/general/2017/11/09/starks_part_1.html)
+- [Part II: Thank Goodness It's FRI-day](https://vitalik.eth.limo/general/2017/11/22/starks_part_2.html)
+- [Part III: Into the Weeds](https://vitalik.eth.limo/general/2018/07/21/starks_part_3.html)
 
 Academic resources:
 
